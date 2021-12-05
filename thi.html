@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/top_side.css">
+    <link rel="stylesheet" href="css/right_side.css">
+    <link rel="stylesheet" href="css/left_side.css">
+    <link rel="stylesheet" href="css/style_cac_form_mini.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/html2canvas@1.3.2/dist/html2canvas.min.js"></script>
+    <title>Document</title>
+</head>
+<body bgcolor="#CED4DA">
+
+<div id="main">
+    <div class="HoVaTen" >&#160&#160&#160&#160&#160&#160&#160&#160
+        <div class="elementOfHovaTen" id="AnhCV">
+			<form runat="server">
+				<img id="blah" src="#" alt="your image" />
+				<input accept="image/*" type='file' id="imgInp" />
+			  </form>
+        </div>
+        
+
+        <div class="name" class="elementOfHovaTen" id = "js_mo_form_thong_tin_ca_nhan">
+          <h1 id = "place_ho_ten">HỌ VÀ TÊN</h1>
+          <h2 id = "place_nghe_nghiep">Nghề nghiệp</h2>
+        </div>
+        <div class="lien_lac" class="elementOfHovaTen">
+
+          <div style="display: flex; flex-direction: row">
+          	<img class = "hinh_lien_lac" src="./pics/gmail.png">&#160&#160
+          	<div id = place_email>feature451@gmail.com</div>
+          </div>
+
+          <div style="display: flex; flex-direction: row">
+          	<img class = "hinh_lien_lac" src="./pics/call.png">&#160&#160
+          	<div id = "place_so_dien_thoai">0123456789</div>
+          </div>
+
+          <div style="display: flex; flex-direction: row">
+          	<img class = "hinh_lien_lac" src="./pics/address.png">&#160&#160
+          	<div id = "place_dia_chi">Hồ Chí Minh</div>
+          </div>
+        </div>
+    </div>
+
+   <div id="Khung2">
+    
+       <div id="GioiThieu">
+            <div class="Intro" id = "js_mo_form_gioi_thieu">
+            <p class="elementOfGioiThieu">Giới thiệu</p>
+            <div class="form" id = "place_gioi_thieu"></div>
+            </div>
+
+            <div class="skill" id = "js_mo_form_ki_nang">
+            <p class="elementOfGioiThieu">Kỹ năng</p>
+
+            <div>
+	            <label id = "place_ten_skill_1">SKILL 1:</label>
+	            <div class="w3-light-grey" id = "place_progresbar_1">
+	  				<div class="w3-grey" style="height:24px;width:20%"></div>
+				</div>
+			</div>
+
+			<div>
+	            <label id = "place_ten_skill_2">SKILL 2:</label>
+	            <div class="w3-light-grey" id = "place_progresbar_2">
+	  				<div class="w3-grey" style="height:24px;width:20%"></div>
+				</div>
+			</div>
+
+			<div>
+	            <label id = "place_ten_skill_3">SKILL 3:</label>
+	            <div class="w3-light-grey" id = "place_progresbar_3">
+	  				<div class="w3-grey" style="height:24px;width:20%"></div>
+				</div>
+			</div>
+			<br>
+
+            </div>
+
+            <div class="language" id = "js_mo_form_ngoai_ngu">
+            <p class="elementOfGioiThieu">Ngoại ngữ</p>
+            <div id = "place_ngoai_ngu"  ><br></div>
+            </div>
+
+             
+
+       </div>
+
+     <div class="HocVan" >
+          <div class="right-side" class="hoc" id = "js_mo_form_hoc_van">
+            <p class="elementOfHocVan">Học Vấn</p>
+            <div class="NoiDung">
+                <div  class="cot_phu" id="">
+                  <p class="button" id = "place_thoi_gian_hoc"><br></p>
+                </div>
+                <div class="cot_chinh" >
+                  <p class="button" id = "place_truong"><br></p>
+                </div>
+            </div>
+          </div>
+
+          <div class="right-side" id="js_mo_form_kinh_nghiem">
+            <p class="elementOfHocVan">Kinh Nghiệm</p>
+            <div class="NoiDung">
+                <div class="cot_phu" id="company">
+                  <p class="button" id = "place_ten_cong_ty_thoi_gian"><br></p>
+                </div>
+                <div  class="cot_chinh" id="position">
+                  <p class="button" id = "place_vi_tri_mo_ta"><br></p>
+                </div>
+            </div>
+          </div>
+
+          <div class="right-side" id="js_mo_form_thanh_tich">
+            <p class="elementOfHocVan">Thành tích</p>
+            <div class="NoiDung">
+                <div  class="cot_phu" id="milestone">
+                  <p class="button" id = "place_thoi_gian_thanh_tich"><br></p>
+                </div>
+                <div class="cot_chinh" id="achivement">
+                  <p class="button" id = "place_ten_thanh_tich"><br></p>
+                </div>
+            </div>
+          </div>
+
+     </div>
+    
+   </div>
+</div>
+
+
+<button class = "form_nut_tai_xuong button_download_style" id = "js-download-pdf">
+    <img class = "hinh_nut_tai_xuong" src="./pics/down-arrow.png">
+</button>
+
+
+<!-- --------------------------Form mini nhập thông tin cá nhân---------------------------------------- -->
+<div class="form_mini" id = "form_thong_tin_ca_nhan">
+	<div class="form_mini__body">
+		<div class="page">
+			<div class="form_mini__heading">
+                <p class="form_mini__heading-title">Thông tin cá nhân</p>
+                <p class="form_mini__close" id = "js_thoat_form_mini_thong_tin_ca_nhan">Thoát</p>
+            </div>
+			<label class="field field_v1">
+				<input class="field__input" placeholder="Châu Kiệt Luân" id = "value_ho_ten">
+				<span class="field__label-wrap">
+			  		<span class="field__label" >Họ và tên</span>
+				</span>
+			</label>
+			<label class="field field_v2">
+				<input class="field__input" placeholder="Lập trình viên" id = "value_nghe_nghiep">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Nghề nghiệp</span>
+				</span>
+			</label>   
+			<label class="field field_v2">
+				<input class="field__input" placeholder="0123465798" id = "value_so_dien_thoai">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Số điện thoại</span>
+				</span>
+			</label> 
+			<label class="field field_v2">
+				<input class="field__input" placeholder="chaukietluan@gmail.com" id = "value_email">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Email</span>
+				</span>
+			</label> 
+			<label class="field field_v3">
+				<input class="field__input" placeholder="Quận 7, TP.Hồ Chí Minh" id = "value_dia_chi">
+				<span class="field__label-wrap">
+		  			<span class="field__label">Địa chỉ</span>
+				</span>
+			</label>
+			<div class="class_form_them">
+                <button class="class_form_button_them" type="submit" onclick="js_them_vao_thong_tin_ca_nhan()" id = "js_them_vao_thong_tin_ca_nhan">Thêm</button>
+            </div>
+		</div>
+	</div>
+</div>
+<!-- --------------------------Form mini nhập học vấn---------------------------------------- -->
+<div class="form_mini" id = "form_hoc_van">
+	<div class="form_mini__body">
+		<div class="page">
+			<div class="form_mini__heading">
+                <p class="form_mini__heading-title">Học vấn</p>
+                <p class="form_mini__close" id = "js_thoat_form_mini_hoc_van">Thoát</p>
+            </div>
+			<label class="field field_v1">
+				<input class="field__input" placeholder="Đại học Tôn Đức Thắng" id = "value_truong">
+				<span class="field__label-wrap">
+			  		<span class="field__label">Trường</span>
+				</span>
+			</label>
+			<label class="field field_v2">
+				<input class="field__input" placeholder="Khoa học máy tính" id = "value_nganh">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Chuyên ngành</span>
+				</span>
+			</label>   
+			<label class="field field_v2">
+				<input class="field__input" placeholder="Xuất sắc" id = "value_loai_bang">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Loại bằng</span>
+				</span>
+			</label> 
+			<label class="field field_v2">
+				<input class="field__input" placeholder="2018" id = "value_nam_bat_dau_hoc">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Ngày bắt đầu</span>
+				</span>
+			</label>
+			<label class="field field_v2">
+				<input class="field__input" placeholder="2021" id = "value_nam_tot_nghiep">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Ngày tốt nghiệp</span>
+				</span>
+			</label>  
+			<div class="class_form_them">
+                <button class="class_form_button_them" type="submit"  id = "js_them_vao_hoc_van" onclick="js_them_vao_hoc_van()">Thêm</button>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- --------------------------Form mini nhập kinh nghiệm---------------------------------------- -->
+<div class="form_mini" id = "form_kinh_nghiem">
+	<div class="form_mini__body">
+		<div class="page">
+			<div class="form_mini__heading">
+                <p class="form_mini__heading-title">Kinh nghiệm</p>
+                <p id = "js_thoat_form_mini_kinh_nghiem" class="form_mini__close">Thoát</p>
+            </div>
+			<label class="field field_v1">
+				<input class="field__input" placeholder="Tập đoàn Công nghiệp-Viễn thông Quân đội" id = "value_cong_ty">
+				<span class="field__label-wrap">
+			  		<span class="field__label">Tên công ty</span>
+				</span>
+			</label>
+			<label class="field field_v2">
+				<input class="field__input" placeholder="Nhà phát triển web" id = "value_vi_tri">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Vị trí</span>
+				</span>
+			</label>   
+			<label class="field field_v2">
+				<input class="field__input" placeholder="Sử dụng công nghệ laravel, jQuery, SQL,.." id = "value_mo_ta_cong_viec">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Mô tả</span>
+				</span>
+			</label> 
+			<label class="field field_v2">
+				<input class="field__input" placeholder="2016, 2019, ..." id = "value_nam_bat_dau_lam">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Năm bắt đầu</span>
+				</span>
+			</label>
+			<label class="field field_v2">
+				<input class="field__input" placeholder="2017, 2020, vẫn còn đang làm, ..." id = "value_nam_nghi_lam">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Năm kết thúc</span>
+				</span>
+			</label>
+
+			<div class="class_form_them">
+                <button class="class_form_button_them" type="submit" id = "js_them_vao_kinh_nghiem" onclick="js_them_vao_kinh_nghiem()">Thêm</button>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- --------------------------Form mini giới thiệu--------------------------------------- -->
+
+<div class="form_mini" id = "form_gioi_thieu">
+	<div class="form_mini__body">
+		<div class="page">
+			<div class="form_mini__heading">
+                <p class="form_mini__heading-title">Giới thiệu</p>
+                <p class="form_mini__close" id = js_thoat_form_mini_gioi_thieu>Thoát</p>
+            </div>
+
+            <label class="field field_v2">
+				<input class="field__input" placeholder="Bạn là người..." id = "value_gioi_thieu" maxlength="27">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Giới thiệu</span>
+				</span>
+			</label> 
+
+			<div class="class_form_them">
+                <button class="class_form_button_them" type="button" id = "js_them_vao_gioi_thieu" onclick="js_them_vao_gioi_thieu()">Thêm</button>
+            </div>
+
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- --------------------------Form mini nhập vào kĩ năng--------------------------------------- -->
+<div class="form_mini" id = "form_ki_nang">
+	<div class="form_mini__body">
+		<div class="page">
+			<div class="form_mini__heading">
+                <p class="form_mini__heading-title">Kỹ năng</p>
+                <p class="form_mini__close" id = "js_thoat_form_mini_ki_nang">Thoát</p>
+            </div>
+
+			<label class="field field_v1">
+				<input class="field__input" placeholder="C, Java, JS, Thuyết trình, giao tiếp, giải quyết vấn đề, ..." id = "value_ten_ky_nang_1">
+				<span class="field__label-wrap">
+			  		<span class="field__label">Tên kỹ năng 1</span>
+				</span>
+			</label>
+			<label class="field field_v3">
+				<input class="field__input" placeholder="1~100"  id = "value_kha_nang_1">
+				<span class="field__label-wrap">
+		  			<span class="field__label">Khả năng</span>
+				</span>
+			</label>
+
+			<label class="field field_v1">
+				<input class="field__input" placeholder="C, Java, JS, Thuyết trình, giao tiếp, giải quyết vấn đề, ..." id = "value_ten_ky_nang_2">
+				<span class="field__label-wrap">
+			  		<span class="field__label">Tên kỹ năng 2</span>
+				</span>
+			</label>
+			<label class="field field_v3">
+				<input class="field__input" placeholder="1~100"  id = "value_kha_nang_2">
+				<span class="field__label-wrap">
+		  			<span class="field__label">Khả năng</span>
+				</span>
+			</label>
+
+			<label class="field field_v1">
+				<input class="field__input" placeholder="C, Java, JS, Thuyết trình, giao tiếp, giải quyết vấn đề, ..." id = "value_ten_ky_nang_3">
+				<span class="field__label-wrap">
+			  		<span class="field__label">Tên kỹ năng 3</span>
+				</span>
+			</label>
+			<label class="field field_v3">
+				<input class="field__input" placeholder="1~100"  id = "value_kha_nang_3">
+				<span class="field__label-wrap">
+		  			<span class="field__label">Khả năng</span>
+				</span>
+			</label>
+
+			
+			<div class="class_form_them">
+                <button class="class_form_button_them" type="submit" id = "js_them_vao_ki_nang" onclick="js_them_vao_ki_nang()">Thêm</button>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- --------------------------Form mini nhập vào ngoại ngữ--------------------------------------- -->
+-
+<div class="form_mini" id = "form_ngoai_ngu">
+	<div class="form_mini__body">
+		<div class="page">
+			<div class="form_mini__heading">
+                <p class="form_mini__heading-title">Ngoại ngữ</p>
+                <p class="form_mini__close" id = "js_thoat_form_mini_ngoai_ngu">Thoát</p>
+            </div>
+			<label class="field field_v1">
+				<input class="field__input" placeholder="Ielts, TOEIC, ..." id = "value_ten_chung_chi">
+				<span class="field__label-wrap">
+			  		<span class="field__label">Tên chứng chỉ</span>
+				</span>
+			</label>
+			<label class="field field_v3">
+				<input class="field__input" placeholder="6.5 ..." id = "value_grand">
+				<span class="field__label-wrap">
+		  			<span class="field__label">Grand</span>
+				</span>
+			</label>
+			<div class="class_form_them">
+                <button class="class_form_button_them" type="submit" onclick="js_them_vao_ngoai_ngu()" id = "js_them_vao_ngoai_ngu">Thêm</button>
+            </div>
+		</div>
+	</div>
+</div>
+
+<!-- --------------------------Form mini nhập vào thành tích--------------------------------------- -->
+
+<div class="form_mini" id="form_thanh_tich">
+	<div class="form_mini__body">
+		<div class="page">
+			<div class="form_mini__heading">
+                <p class="form_mini__heading-title">Thành tích</p>
+                <p id = "js_thoat_form_mini_thanh_tich" class="form_mini__close">Thoát</p>
+            </div>
+			<label class="field field_v1">
+				<input class="field__input" placeholder="VietNam Hackathon 2018" id = "value_ten_thanh_tich">
+				<span class="field__label-wrap">
+			  		<span class="field__label">Tên giải thưởng</span>
+				</span>
+			</label>
+			<label class="field field_v3">
+				<input class="field__input" placeholder="Giải nhất" id = "value_giai">
+				<span class="field__label-wrap">
+	  				<span class="field__label">Giải</span>
+				</span>
+			</label>   
+			<br>
+			<label class="field field_v2">
+                <label>Ngày trao giải: &#160&#160&#160</label>
+                <input class = "input_date" type="date" id = "value_ngay_trao_giai">
+			</label> 
+			<div class="class_form_them">
+                <button class="class_form_button_them" type="submit" id = "js_them_vao_thanh_tich" onclick="js_them_vao_thanh_tich()">Thêm</button>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+<script language="javascript" src="webThi.js"></script>
+</body>
+</html>

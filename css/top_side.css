@@ -1,0 +1,97 @@
+input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+input#imgInp{
+    display: block;
+    width: 100%;
+    padding: 150px 0 0 0;
+    height: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-size: 60px 60px;
+    background-color: gainsboro;
+  }
+#blah
+{
+    width: 100%;
+    height: 100%;
+}
+.HoVaTen
+{
+    background-color:#525253;
+    width: 100%;
+    height: 280.64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.elementOfHovaTen
+{
+    width: 30%;
+    height: 70%;
+}
+.elementOfHovaTen:hover
+{
+    cursor: pointer;
+    background-color: mintcream;
+}
+#AnhCV
+{
+    background-color: #525253;
+    width: 25%;
+    height: 80%;
+    font-weight:bold;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#CVimage
+{
+    margin-left: 35%;
+    color:rgb(15, 45, 65);
+}
+.name
+{
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+    color: white;
+    width: 40%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left: 30px;
+}
+.lien_lac
+{
+    color: white;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 15px;
+
+}
+
+.name:hover
+{
+    cursor: pointer;
+    border: thick solid gainsboro
+}
+
+
+.avatar_nguoi_dung{
+
+    position: absolute;
+    left: 43px;
+    top: 5px;
+    height: 225px;
+    width: 225px;
+    border-radius: 3001px;
+}
