@@ -161,7 +161,7 @@ function js_them_vao_hoc_van(){
     var noi_dung_ngay_tot_nghiep = document.getElementById("value_nam_tot_nghiep").value;
 
     document.getElementById("place_thoi_gian_hoc").appendChild(document.createElement("P"));
-    document.querySelector("#place_thoi_gian_hoc > p:last-child").innerHTML = 'Trường: ' +  noi_dung_ngay_bat_dau_hoc + ' - ' + noi_dung_ngay_tot_nghiep + '<br><br><br><br><hr color = "#BFBEBE">';
+    document.querySelector("#place_thoi_gian_hoc > p:last-child").innerHTML = noi_dung_ngay_bat_dau_hoc + ' - ' + noi_dung_ngay_tot_nghiep + '<br><br><br><br><hr color = "#BFBEBE">';
 
     document.getElementById("place_truong").appendChild(document.createElement("P"));
     document.querySelector("#place_truong > p:last-child").innerHTML = noi_dung_truong + '<br>' + 'Chuyên ngành: ' + noi_dung_nganh + '<br>' + 'Bằng: ' + noi_dung_loai_bang + '<br><br><hr color = "#BFBEBE">';
